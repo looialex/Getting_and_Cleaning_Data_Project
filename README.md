@@ -2,15 +2,15 @@
 &nbsp;
 ### Introduction ###
 This repo contains the code file "run_analysis.R" that convert Raw data obtained from UCI Machine Learning Repository
-to a new set of data. The raw data set contains measurement done by a smart phone that is attached to a human subject
+to a new set of data. The raw data set contains measurement made by a smart phone that is attached to a human subject
 while the subject is performing various activities as listed below:
 
-1. Standing
-2. Walking Upstairs
-3. Walking Downstairs
-4. Laying
-5. Sitting
-6. Walking
+1. WALKING
+2. WALKING UPSTAIRS
+3. WALKING DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
 
 &nbsp;
 
