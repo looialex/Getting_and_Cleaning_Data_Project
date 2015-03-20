@@ -18,7 +18,7 @@ The following files are in this repo:
 
 1. README.md (this file) - Describe what this repo is all about.
 2. run_analysis.R - Code that convert some raw data to tidy data set
-3) cookbook.md - Describe in details how the raw data are converted to tidy data, and the details of each variables.
+3. cookbook.md - Describe in details how the raw data are converted to tidy data, and the details of each variables.
 
 &nbsp;
 
