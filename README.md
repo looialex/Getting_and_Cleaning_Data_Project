@@ -23,7 +23,7 @@ The following files are in this repo:
 &nbsp;
 
 To run the code, simply copy the code file "run_analysis.R".into your PC and type  
-[source("<Drive>:/<Directory>/run_analysis.R")] in the R environment without the [].
+[source("<Drive>:/<Directory>/run_analysis.R")] in the R environment without the [].  
 For example, if the code is downloaded into the C: drive root directory,  
 then run the code by typing [source("C:/run_analysis.R")]
 
