@@ -2,6 +2,8 @@
 This code book describes the variables, the data, and any transformations
 or work that is performed to get the tidy data set in "tidy_data.txt"
 
+&nbsp;
+
 It also contains the following section:
 
 1. Data transformation - Steps of how the raw data is transformed into the tidy data.
@@ -156,288 +158,287 @@ There are a totoal of 180 observations (rows).
 Each observation contains 1 subject id, 1 action type, and 66 measurements (68 columns)
 
 
-The format of the variable information will be as follows:  
-[Variable Name, type]  
-	[Variable Description]  
-		[Range or possible value]
+The format of the variable information will be as follows:
+* Variable Name, type
+	* Variable Description
+		* Range or possible value
 
-
-1. subject, int  
-	Subject identifier that identify from which subject  
-	(i.e. from who) is the data obtained from.  
-		1 - 30
+1. subject, int
+	* Subject identifier that identify from which subject (i.e. from who) is the data obtained from.
+		* 1 - 30
 			
-2. activity, Factor with 6 levels  
-	The type of activity the subject is performing when the data is collected.
-		LAYING
-		SITTING
-		STANDING
-		WALKING
-		WALKING_DOWNSTAIRS
-		WALKING_UPSTAIRS
-
-3. tBodyAcc-Avg(mean)-X, numeric  
-	Average of the mean Body Acceleration in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-4. tBodyAcc-Avg(mean)-Y, numeric  
-	Average of the mean Body Acceleration in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-5. tBodyAcc-Avg(mean)-Z, numeric  
-	Average of the mean Body Acceleration in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-6. tBodyAcc-Avg(std)-X, numeric  
-	Average of the Standard Deviation of Body Acceleration in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-7. tBodyAcc-Avg(std)-Y, numeric  
-	Average of the Standard Deviation of Body Acceleration in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-8. tBodyAcc-Avg(std)-Z, numeric  
-	Average of the Standard Deviation of Body Acceleration in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-9. tGravityAcc-Avg(mean)-X, numeric  
-	Average of the mean of Gravity Acceleration in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-10. tGravityAcc-Avg(mean)-Y, numeric  
-	Average of the mean of Gravity Acceleration in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-11. tGravityAcc-Avg(mean)-Z, numeric  
-	Average of the mean of Gravity Acceleration in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-12. tGravityAcc-Avg(std)-X, numeric  
-	Average of the Standard Deviation of Gravity Acceleration in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-13. tGravityAcc-Avg(std)-Y, numeric  
-	Average of the Standard Deviation of Gravity Acceleration in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-14. tGravityAcc-Avg(std)-Z, numeric  
-	Average of the Standard Deviation of Gravity Acceleration in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-15. tBodyAccJerk-Avg(mean)-X, numeric  
-	Average of the mean of Jerk in Body Acceleration in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-16. tBodyAccJerk-Avg(mean)-Y, numeric  
-	Average of the mean of Jerk in Body Acceleration in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-17. tBodyAccJerk-Avg(mean)-Z, numeric  
-	Average of the mean of Jerk in Body Acceleration in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-18. tBodyAccJerk-Avg(std)-X, numeric  
-	Average of the Standard Deviation of Jerk in Body Acceleration in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-19. tBodyAccJerk-Avg(std)-Y, numeric  
-	Average of the Standard Deviation of Jerk in Body Acceleration in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-20. tBodyAccJerk-Avg(std)-Z, numeric  
-	Average of the Standard Deviation of Jerk in Body Acceleration in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-21. tBodyGyro-Avg(mean)-X, numeric  
-	Average of the mean of Body Gyro in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-22. tBodyGyro-Avg(mean)-Y, numeric  
-	Average of the mean of Body Gyro in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-23. tBodyGyro-Avg(mean)-Z, numeric  
-	Average of the mean of Body Gyro in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-24. tBodyGyro-Avg(std)-X, numeric  
-	Average of the Standard Deviation of Body Gyro in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-25. tBodyGyro-Avg(std)-Y, numeric  
-	Average of the Standard Deviation of Body Gyro in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-26. tBodyGyro-Avg(std)-Z, numeric  
-	Average of the Standard Deviation of Body Gyro in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-27. tBodyGyroJerk-Avg(mean)-X, numeric  
-	Average of the mean of Jerk in Body Gyro in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-28. tBodyGyroJerk-Avg(mean)-Y, numeric  
-	Average of the mean of Jerk in Body Gyro in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-29. tBodyGyroJerk-Avg(mean)-Z, numeric  
-	Average of the mean of Jerk in Body Gyro in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-30. tBodyGyroJerk-Avg(std)-X, numeric  
-	Average of the Standard Deviation of Jerk in Body Gyro in time domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-31. tBodyGyroJerk-Avg(std)-Y, numeric  
-	Average of the Standard Deviation of Jerk in Body Gyro in time domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-32. tBodyGyroJerk-Avg(std)-Z, numeric  
-	Average of the Standard Deviation of Jerk in Body Gyro in time domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-33. tBodyAccMag-Avg(mean), numeric  
-	Average of the mean of Body Acceleration Magnitude in time domain  
-		Normalized and bounded within [-1,1]
-
-34. tBodyAccMag-Avg(std), numeric  
-	Average of the Standard Deviation of Body Acceleration Magnitude in time domain  
-		Normalized and bounded within [-1,1]
-
-35. tGravityAccMag-Avg(mean), numeric  
-	Average of the mean of Gravitiy Acceleration Magnitude in time domain  
-		Normalized and bounded within [-1,1]
-
-36. tGravityAccMag-Avg(std), numeric  
-	Average of the Standard Deviation of Gravitiy Acceleration Magnitude in time domain  
-		Normalized and bounded within [-1,1]
-
-37. tBodyAccJerkMag-Avg(mean), numeric  
-	Average of the mean of Magnitude of Jerk in Body Acceleration in time domain  
-		Normalized and bounded within [-1,1]
-
-38. tBodyAccJerkMag-Avg(std), numeric  
-	Average of the Standard Deviation of Magnitude of Jerk in Body Acceleration in time domain  
-		Normalized and bounded within [-1,1]
-
-39. tBodyGyroMag-Avg(mean), numeric  
-	Average of the mean of Body Gyro Magnitude in time domain  
-		Normalized and bounded within [-1,1]
-
-40. tBodyGyroMag-Avg(std), numeric  
-	Average of the Standard Deviation of Body Gyro Magnitude in time domain  
-		Normalized and bounded within [-1,1]
-
-41. tBodyGyroJerkMag-Avg(mean), numeric  
-	Average of the mean of Magnitude of Jerk in Body Gyro in time domain  
-		Normalized and bounded within [-1,1]
-
-42. tBodyGyroJerkMag-Avg(std), numeric  
-	Average of the Standard Deviation of Magnitude of Jerk in Body Gyro in time domain  
-		Normalized and bounded within [-1,1]
-
-43. fBodyAcc-Avg(mean)-X, numeric  
-	Average of the mean Body Acceleration in freq domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-44. fBodyAcc-Avg(mean)-Y, numeric  
-	Average of the mean Body Acceleration in freq domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-45. fBodyAcc-Avg(mean)-Z, numeric  
-	Average of the mean Body Acceleration in freq domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-46. fBodyAcc-Avg(std)-X, numeric  
-	Average of the Standard Deviation of Body Acceleration in freq domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-47. fBodyAcc-Avg(std)-Y, numeric  
-	Average of the Standard Deviation of Body Acceleration in freq domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-48. fBodyAcc-Avg(std)-Z, numeric  
-	Average of the Standard Deviation of Body Acceleration in freq domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-49. fBodyAccJerk-Avg(mean)-X, numeric  
-	Average of the mean of Jerk in Body Acceleration in freq domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-50. fBodyAccJerk-Avg(mean)-Y, numeric  
-	Average of the mean of Jerk in Body Acceleration in freq domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-51. fBodyAccJerk-Avg(mean)-Z, numeric  
-	Average of the mean of Jerk in Body Acceleration in freq domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-52. fBodyAccJerk-Avg(std)-X, numeric  
-	Average of the Standard Deviation of Jerk in Body Acceleration in freq domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-53. fBodyAccJerk-Avg(std)-Y, numeric  
-	Average of the Standard Deviation of Jerk in Body Acceleration in freq domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-54. fBodyAccJerk-Avg(std)-Z, numeric  
-	Average of the Standard Deviation of Jerk in Body Acceleration in freq domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-55. fBodyGyro-Avg(mean)-X, numeric  
-	Average of the mean of Body Gyro in freq domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-56. fBodyGyro-Avg(mean)-Y, numeric  
-	Average of the mean of Body Gyro in freq domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-57. fBodyGyro-Avg(mean)-Z, numeric  
-	Average of the mean of Body Gyro in freq domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-58. fBodyGyro-Avg(std)-X, numeric  
-	Average of the Standard Deviation of Body Gyro in freq domain, X-axis  
-		Normalized and bounded within [-1,1]
-
-59. fBodyGyro-Avg(std)-Y, numeric  
-	Average of the Standard Deviation of Body Gyro in freq domain, Y-axis  
-		Normalized and bounded within [-1,1]
-
-60. fBodyGyro-Avg(std)-Z, numeric  
-	Average of the Standard Deviation of Body Gyro in freq domain, Z-axis  
-		Normalized and bounded within [-1,1]
-
-61. fBodyAccMag-Avg(mean), numeric  
-	Average of the mean of Body Acceleration Magnitude in freq domain  
-		Normalized and bounded within [-1,1]
-
-62. fBodyAccMag-Avg(std), numeric  
-	Average of the Standard Deviation of Body Acceleration Magnitude in freq domain  
-		Normalized and bounded within [-1,1]
-
-63. fBodyBodyAccJerkMag-Avg(mean), numeric  
-	Average of the mean of Magnitude of Jerk in Body Acceleration in freq domain  
-		Normalized and bounded within [-1,1]
-
-64. fBodyBodyAccJerkMag-Avg(std), numeric  
-	Average of the Standard Deviation of Magnitude of Jerk in Body Acceleration in freq domain  
-		Normalized and bounded within [-1,1]
-
-65. fBodyBodyGyroMag-Avg(mean), numeric  
-	Average of the mean of Body Gyro Magnitude in freq domain  
-		Normalized and bounded within [-1,1]
-
-66. fBodyBodyGyroMag-Avg(std), numeric  
-	Average of the Standard Deviation of Body Gyro Magnitude in freq domain  
-		Normalized and bounded within [-1,1]
-
-67. fBodyBodyGyroJerkMag-Avg(mean), numeric  
-	Average of the mean of Magnitude of Jerk in Body Gyro in freq domain  
-		Normalized and bounded within [-1,1]
-
-68. fBodyBodyGyroJerkMag-Avg(std), numeric  
-	Average of the Standard Deviation of Magnitude of Jerk in Body Gyro in freq domain  
-		Normalized and bounded within [-1,1]
+2. activity, Factor with 6 levels
+	* The type of activity the subject is performing when the data is collected.
+
+		1. WALKING
+		2. WALKING UPSTAIRS
+		3. WALKING DOWNSTAIRS
+		4. SITTING
+		5. STANDING
+		6. LAYING
+
+3. tBodyAcc-Avg(mean)-X, numeric
+	* Average of the mean Body Acceleration in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+4. tBodyAcc-Avg(mean)-Y, numeric
+	* Average of the mean Body Acceleration in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+5. tBodyAcc-Avg(mean)-Z, numeric
+	* Average of the mean Body Acceleration in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+6. tBodyAcc-Avg(std)-X, numeric
+	* Average of the Standard Deviation of Body Acceleration in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+7. tBodyAcc-Avg(std)-Y, numeric
+	* Average of the Standard Deviation of Body Acceleration in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+8. tBodyAcc-Avg(std)-Z, numeric
+	* Average of the Standard Deviation of Body Acceleration in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+9. tGravityAcc-Avg(mean)-X, numeric
+	* Average of the mean of Gravity Acceleration in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+10. tGravityAcc-Avg(mean)-Y, numeric
+	* Average of the mean of Gravity Acceleration in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+11. tGravityAcc-Avg(mean)-Z, numeric
+	* Average of the mean of Gravity Acceleration in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+12. tGravityAcc-Avg(std)-X, numeric
+	* Average of the Standard Deviation of Gravity Acceleration in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+13. tGravityAcc-Avg(std)-Y, numeric
+	* Average of the Standard Deviation of Gravity Acceleration in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+14. tGravityAcc-Avg(std)-Z, numeric
+	* Average of the Standard Deviation of Gravity Acceleration in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+15. tBodyAccJerk-Avg(mean)-X, numeric
+	* Average of the mean of Jerk in Body Acceleration in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+16. tBodyAccJerk-Avg(mean)-Y, numeric
+	* Average of the mean of Jerk in Body Acceleration in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+17. tBodyAccJerk-Avg(mean)-Z, numeric
+	* Average of the mean of Jerk in Body Acceleration in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+18. tBodyAccJerk-Avg(std)-X, numeric
+	* Average of the Standard Deviation of Jerk in Body Acceleration in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+19. tBodyAccJerk-Avg(std)-Y, numeric
+	* Average of the Standard Deviation of Jerk in Body Acceleration in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+20. tBodyAccJerk-Avg(std)-Z, numeric
+	* Average of the Standard Deviation of Jerk in Body Acceleration in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+21. tBodyGyro-Avg(mean)-X, numeric
+	* Average of the mean of Body Gyro in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+22. tBodyGyro-Avg(mean)-Y, numeric
+	* Average of the mean of Body Gyro in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+23. tBodyGyro-Avg(mean)-Z, numeric
+	* Average of the mean of Body Gyro in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+24. tBodyGyro-Avg(std)-X, numeric
+	* Average of the Standard Deviation of Body Gyro in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+25. tBodyGyro-Avg(std)-Y, numeric
+	* Average of the Standard Deviation of Body Gyro in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+26. tBodyGyro-Avg(std)-Z, numeric
+	* Average of the Standard Deviation of Body Gyro in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+27. tBodyGyroJerk-Avg(mean)-X, numeric
+	* Average of the mean of Jerk in Body Gyro in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+28. tBodyGyroJerk-Avg(mean)-Y, numeric
+	* Average of the mean of Jerk in Body Gyro in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+29. tBodyGyroJerk-Avg(mean)-Z, numeric
+	* Average of the mean of Jerk in Body Gyro in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+30. tBodyGyroJerk-Avg(std)-X, numeric
+	* Average of the Standard Deviation of Jerk in Body Gyro in time domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+31. tBodyGyroJerk-Avg(std)-Y, numeric
+	* Average of the Standard Deviation of Jerk in Body Gyro in time domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+32. tBodyGyroJerk-Avg(std)-Z, numeric
+	* Average of the Standard Deviation of Jerk in Body Gyro in time domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+33. tBodyAccMag-Avg(mean), numeric
+	* Average of the mean of Body Acceleration Magnitude in time domain
+		* Normalized and bounded within [-1,1]
+
+34. tBodyAccMag-Avg(std), numeric
+	* Average of the Standard Deviation of Body Acceleration Magnitude in time domain
+		* Normalized and bounded within [-1,1]
+
+35. tGravityAccMag-Avg(mean), numeric
+	* Average of the mean of Gravitiy Acceleration Magnitude in time domain
+		* Normalized and bounded within [-1,1]
+
+36. tGravityAccMag-Avg(std), numeric
+	* Average of the Standard Deviation of Gravitiy Acceleration Magnitude in time domain
+		* Normalized and bounded within [-1,1]
+
+37. tBodyAccJerkMag-Avg(mean), numeric
+	* Average of the mean of Magnitude of Jerk in Body Acceleration in time domain
+		* Normalized and bounded within [-1,1]
+
+38. tBodyAccJerkMag-Avg(std), numeric
+	* Average of the Standard Deviation of Magnitude of Jerk in Body Acceleration in time domain
+		* Normalized and bounded within [-1,1]
+
+39. tBodyGyroMag-Avg(mean), numeric
+	* Average of the mean of Body Gyro Magnitude in time domain
+		* Normalized and bounded within [-1,1]
+
+40. tBodyGyroMag-Avg(std), numeric
+	* Average of the Standard Deviation of Body Gyro Magnitude in time domain
+		* Normalized and bounded within [-1,1]
+
+41. tBodyGyroJerkMag-Avg(mean), numeric
+	* Average of the mean of Magnitude of Jerk in Body Gyro in time domain
+		* Normalized and bounded within [-1,1]
+
+42. tBodyGyroJerkMag-Avg(std), numeric
+	* Average of the Standard Deviation of Magnitude of Jerk in Body Gyro in time domain
+		* Normalized and bounded within [-1,1]
+
+43. fBodyAcc-Avg(mean)-X, numeric
+	* Average of the mean Body Acceleration in freq domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+44. fBodyAcc-Avg(mean)-Y, numeric
+	* Average of the mean Body Acceleration in freq domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+45. fBodyAcc-Avg(mean)-Z, numeric
+	* Average of the mean Body Acceleration in freq domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+46. fBodyAcc-Avg(std)-X, numeric
+	* Average of the Standard Deviation of Body Acceleration in freq domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+47. fBodyAcc-Avg(std)-Y, numeric
+	* Average of the Standard Deviation of Body Acceleration in freq domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+48. fBodyAcc-Avg(std)-Z, numeric
+	* Average of the Standard Deviation of Body Acceleration in freq domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+49. fBodyAccJerk-Avg(mean)-X, numeric
+	* Average of the mean of Jerk in Body Acceleration in freq domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+50. fBodyAccJerk-Avg(mean)-Y, numeric
+	* Average of the mean of Jerk in Body Acceleration in freq domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+51. fBodyAccJerk-Avg(mean)-Z, numeric
+	* Average of the mean of Jerk in Body Acceleration in freq domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+52. fBodyAccJerk-Avg(std)-X, numeric
+	* Average of the Standard Deviation of Jerk in Body Acceleration in freq domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+53. fBodyAccJerk-Avg(std)-Y, numeric
+	* Average of the Standard Deviation of Jerk in Body Acceleration in freq domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+54. fBodyAccJerk-Avg(std)-Z, numeric
+	* Average of the Standard Deviation of Jerk in Body Acceleration in freq domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+55. fBodyGyro-Avg(mean)-X, numeric
+	* Average of the mean of Body Gyro in freq domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+56. fBodyGyro-Avg(mean)-Y, numeric
+	* Average of the mean of Body Gyro in freq domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+57. fBodyGyro-Avg(mean)-Z, numeric
+	* Average of the mean of Body Gyro in freq domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+58. fBodyGyro-Avg(std)-X, numeric
+	* Average of the Standard Deviation of Body Gyro in freq domain, X-axis
+		* Normalized and bounded within [-1,1]
+
+59. fBodyGyro-Avg(std)-Y, numeric
+	* Average of the Standard Deviation of Body Gyro in freq domain, Y-axis
+		* Normalized and bounded within [-1,1]
+
+60. fBodyGyro-Avg(std)-Z, numeric
+	* Average of the Standard Deviation of Body Gyro in freq domain, Z-axis
+		* Normalized and bounded within [-1,1]
+
+61. fBodyAccMag-Avg(mean), numeric
+	* Average of the mean of Body Acceleration Magnitude in freq domain
+		* Normalized and bounded within [-1,1]
+
+62. fBodyAccMag-Avg(std), numeric
+	* Average of the Standard Deviation of Body Acceleration Magnitude in freq domain
+		* Normalized and bounded within [-1,1]
+
+63. fBodyBodyAccJerkMag-Avg(mean), numeric
+	* Average of the mean of Magnitude of Jerk in Body Acceleration in freq domain
+		* Normalized and bounded within [-1,1]
+
+64. fBodyBodyAccJerkMag-Avg(std), numeric
+	* Average of the Standard Deviation of Magnitude of Jerk in Body Acceleration in freq domain
+		* Normalized and bounded within [-1,1]
+
+65. fBodyBodyGyroMag-Avg(mean), numeric
+	* Average of the mean of Body Gyro Magnitude in freq domain
+		* Normalized and bounded within [-1,1]
+
+66. fBodyBodyGyroMag-Avg(std), numeric
+	* Average of the Standard Deviation of Body Gyro Magnitude in freq domain
+		* Normalized and bounded within [-1,1]
+
+67. fBodyBodyGyroJerkMag-Avg(mean), numeric
+	* Average of the mean of Magnitude of Jerk in Body Gyro in freq domain
+		* Normalized and bounded within [-1,1]
+
+68. fBodyBodyGyroJerkMag-Avg(std), numeric
+	* Average of the Standard Deviation of Magnitude of Jerk in Body Gyro in freq domain
+		* Normalized and bounded within [-1,1]
 
 ## End Section: Code Book ##
